@@ -27,6 +27,13 @@
   </div>
   <div class="row">
   <div class="col">
+  @yield("contenido2")
+  </div>
+  
+  </div>
+
+  <div class="row">
+  <div class="col">
   @yield("contenido1")
   </div>
   

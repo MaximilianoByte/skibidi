@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AlumnoController;
+use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PuestoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -34,6 +37,19 @@ Route::get('/mezcladoras', function () {
 Route::get('/tuberias', function () {
     return view('tuberias');
 })->middleware(['auth'])->name('tuberias');
+
+
+
+
+
+Route::resource("plazas", PlazaController::class);
+
+Route::resource("puestos", PuestoController::class);
+
+Route::resource("alumnos", AlumnoController::class);
+
+
+
 
 
 Route::get('/dashboard', function () {

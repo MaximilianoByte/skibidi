@@ -39,10 +39,10 @@
                         <a class="dropdown-item" href="#"
                             >Periodos</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route('plazas.index')}}"
                             >Plazas</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route('puestos.index')}}"
                             >Puestos</a
                         >
                         <a class="dropdown-item" href="#"
@@ -60,7 +60,7 @@
                         <a class="dropdown-item" href="#"
                             >Materias</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route(name: 'alumnos.index')}}"
                             >Alumnos</a
                         >
                     </div>
