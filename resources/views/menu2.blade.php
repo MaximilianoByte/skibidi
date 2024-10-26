@@ -36,7 +36,7 @@
                         class="dropdown-menu"
                         aria-labelledby="dropdownId"
                     >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route('periodos.index')}}"
                             >Periodos</a
                         >
                         <a class="dropdown-item" href="{{route('plazas.index')}}"
@@ -48,16 +48,16 @@
                         <a class="dropdown-item" href="#"
                             >Personal</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route(name: 'deptos.index')}}"
                             >Deptos</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route(name: 'carreras.index')}}"
                             >Carreras</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route(name: 'reticulas.index')}}"
                             >Reticual</a
                         >
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="{{route(name: 'materias.index')}}"
                             >Materias</a
                         >
                         <a class="dropdown-item" href="{{route(name: 'alumnos.index')}}"

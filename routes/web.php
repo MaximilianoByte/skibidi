@@ -1,9 +1,14 @@
 <?php
 
 use App\Http\Controllers\AlumnoController;
+use App\Http\Controllers\CarreraController;
+use App\Http\Controllers\DeptoController;
+use App\Http\Controllers\MateriaController;
+use App\Http\Controllers\PeriodoController;
 use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PuestoController;
+use App\Http\Controllers\ReticulaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -47,6 +52,12 @@ Route::resource("plazas", PlazaController::class);
 Route::resource("puestos", PuestoController::class);
 
 Route::resource("alumnos", AlumnoController::class);
+
+Route::resource("deptos", DeptoController::class);
+Route::resource("periodos", PeriodoController::class);
+Route::resource("carreras", CarreraController::class);
+Route::resource("reticulas", ReticulaController::class);
+Route::resource("materias", MateriaController::class);
 
 
 
