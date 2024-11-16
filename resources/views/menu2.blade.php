@@ -45,9 +45,6 @@
                         <a class="dropdown-item" href="{{route('puestos.index')}}"
                             >Puestos</a
                         >
-                        <a class="dropdown-item" href="#"
-                            >Personal</a
-                        >
                         <a class="dropdown-item" href="{{route(name: 'deptos.index')}}"
                             >Deptos</a
                         >
@@ -62,6 +59,23 @@
                         >
                         <a class="dropdown-item" href="{{route(name: 'alumnos.index')}}"
                             >Alumnos</a
+                        >
+
+
+                        <a class="dropdown-item" href="{{route(name: 'personal.index')}}"
+                            >Personal</a
+                        >
+                        <a class="dropdown-item" href="{{route(name: 'personalplazas.index')}}"
+                            >Personal Plazas</a
+                        >
+                        <a class="dropdown-item" href="{{route(name: 'horas.index')}}"
+                            >Horas</a
+                        >
+                        <a class="dropdown-item" href="{{route(name: 'edificios.index')}}"
+                            >Edificios</a
+                        >
+                        <a class="dropdown-item" href="{{route(name: 'lugares.index')}}"
+                            >Lugares</a
                         >
                     </div>
                 </li>

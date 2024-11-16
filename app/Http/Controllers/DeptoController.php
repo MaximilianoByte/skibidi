@@ -12,11 +12,24 @@ class DeptoController extends Controller
     function __construct() {
         $this->deptos = depto::paginate(5);
     }
-    public function index()
+
+    //INDEX PARA PONER ORDENAMIENTO
+    public function index(Request $request)
     {
-        return view("deptos/index", ["deptos" => $this->deptos]);
-   
+        $sortField = $request->get('sort', 'id'); // Campo por el cual ordenar, por defecto 'id'
+        $sortDirection = $request->get('direction', 'asc'); // Dirección de ordenación, por defecto 'asc'
+        
+        $this->deptos = depto::orderBy($sortField, $sortDirection)->paginate(5);
+        
+        return view("deptos/index", [
+            "deptos" => $this->deptos,
+            "sortField" => $sortField,
+            "sortDirection" => $sortDirection
+        ]);
     }
+    
+    
+
 
     /**
      * Show the form for creating a new resource.

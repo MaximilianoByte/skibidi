@@ -3,8 +3,13 @@
 use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\CarreraController;
 use App\Http\Controllers\DeptoController;
+use App\Http\Controllers\EdificioController;
+use App\Http\Controllers\HoraController;
+use App\Http\Controllers\LugaresController;
 use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\PeriodoController;
+use App\Http\Controllers\PersonalController;
+use App\Http\Controllers\PersonalplazaController;
 use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PuestoController;
@@ -52,12 +57,20 @@ Route::resource("plazas", PlazaController::class);
 Route::resource("puestos", PuestoController::class);
 
 Route::resource("alumnos", AlumnoController::class);
+// PARA LA ORDENACION
+// Route::get('/deptos', [DeptoController::class, 'index'])->name('deptos.index');
 
-Route::resource("deptos", DeptoController::class);
 Route::resource("periodos", PeriodoController::class);
+Route::resource("deptos", DeptoController::class);
 Route::resource("carreras", CarreraController::class);
 Route::resource("reticulas", ReticulaController::class);
 Route::resource("materias", MateriaController::class);
+
+Route::resource("edificios", EdificioController::class);
+Route::resource("horas", HoraController::class);
+Route::resource("lugares", LugaresController::class);
+Route::resource("personalplazas", PersonalplazaController::class);
+Route::resource("personal", PersonalController::class);
 
 
 
